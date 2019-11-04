@@ -36,7 +36,12 @@ class Child extends Parent {
 }
 public class InitMain {
     public static void main(String[] args) {
-        //new Child();// new关键字初始化 注释开启和未开启作比较
+        // new关键字初始化 注释开启和未开启作比较
+        /**
+         * 1：注释掉，只有父类的静态代码块执行
+         * 2：解注掉，父类和子类的静态代码块都执行
+         */
+        new Child();
         System.out.println("======");
         System.out.println(Child.v); // 此时Child已经被加载，但未被初始化
     }

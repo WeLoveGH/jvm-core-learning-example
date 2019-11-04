@@ -19,7 +19,7 @@ package org.jvmcore.classloader;
 /**
  * @author Jeff Lee
  * @since 2015-12-4 13:17:49
- *  Final字段不会被引起初始化
+ *  Final字段不会被引起初始化，静态代码块的内容没有执行
  */
 class FinalFieldClass {
     public static final String CONST_STR = "CONSTSTR";

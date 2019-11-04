@@ -25,9 +25,19 @@ package org.jvmcore.heap;
  */
 public class JvmXmxArgs {
     public static void main(String[] args) {
-        for (String arg : args)
+
+        for (String arg : args){
             System.out.println("参数为" + arg);
+        }
+
         // 堆内存
         System.out.println("-Xmx:" + Runtime.getRuntime().maxMemory() / 1024 / 1024 + "M");
     }
 }
+/*
+
+JVM参数：
+
+https://www.oracle.com/technetwork/java/javase/tech/vmoptions-jsp-140102.html#BehavioralOptions
+
+ */

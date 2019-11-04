@@ -26,5 +26,13 @@ public class FloatInJvm {
         float a = -5;
         // 输出-5的补码，即虚拟机内部实际表示
         System.out.println(Integer.toBinaryString(Float.floatToRawIntBits(a)));
+
+
+        /**
+         * 二进制的表示
+         */
+        for(int i=0;i<1000;i++){
+            System.out.println(i+" : "+Integer.toBinaryString(i)+ " "+Integer.toBinaryString(Float.floatToRawIntBits(i)));
+        }
     }
 }
